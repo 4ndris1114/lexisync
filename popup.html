@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+    }
+    .header { color: #1a73e8; font-weight: bold; font-size: 18px; margin-bottom: 12px; }
+    input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      outline: none;
+    }
+    input:focus { border-color: #1a73e8; }
+    #results { margin-top: 15px; display: flex; flex-wrap: wrap; gap: 5px; }
+    .synonym-chip {
+      background: #e8f0fe;
+      color: #1967d2;
+      padding: 5px 10px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
+    .loader { font-size: 12px; color: #666; display: none; }
+  </style>
+</head>
+<body>
+  <div class="header">LexiSync Search</div>
+  <input type="text" id="wordInput" placeholder="Type a word..." autofocus>
+  <div id="loader" class="loader">Searching...</div>
+  <div id="results"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
